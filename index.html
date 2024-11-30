@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es" class>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículum Vitae</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+
+    <div class="max-w-4xl mx-auto p-6 bg-white dark:bg-gray-800 shadow-lg rounded-lg mt-10">
+        <!-- Header -->
+        <header class="text-center mb-8">
+            <h1 class="text-4xl font-bold text-blue-600 dark:text-blue-400">Juan Pérez</h1>
+            <p class="text-lg text-gray-600 dark:text-gray-400">Desarrollador Web | Diseñador Front-End</p>
+        </header>
+
+        <!-- Botón para alternar entre modo claro y oscuro -->
+        <div class="text-right mb-4">
+            <button id="theme-toggle" class="bg-blue-600 text-white p-2 rounded-lg">
+                Cambiar a Modo Oscuro
+            </button>
+        </div>
+
+        <!-- Contact Info -->
+        <section class="grid grid-cols-2 gap-6 mb-8">
+            <div>
+                <p class="font-semibold text-gray-700 dark:text-gray-300">Correo Electrónico</p>
+                <p class="text-gray-600 dark:text-gray-400">juan.perez@email.com</p>
+            </div>
+            <div>
+                <p class="font-semibold text-gray-700 dark:text-gray-300">Teléfono</p>
+                <p class="text-gray-600 dark:text-gray-400">(123) 456-7890</p>
+            </div>
+            <div>
+                <p class="font-semibold text-gray-700 dark:text-gray-300">LinkedIn</p>
+                <p class="text-gray-600 dark:text-gray-400">linkedin.com/in/juanperez</p>
+            </div>
+            <div>
+                <p class="font-semibold text-gray-700 dark:text-gray-300">GitHub</p>
+                <p class="text-gray-600 dark:text-gray-400">github.com/juanperez</p>
+            </div>
+        </section>
+
+        <!-- Perfil -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 mb-4">Perfil Profesional</h2>
+            <p class="text-gray-600 dark:text-gray-400">
+                Soy un desarrollador web apasionado con más de 3 años de experiencia en la creación de aplicaciones web interactivas
+                utilizando tecnologías modernas como HTML, CSS, JavaScript y frameworks como React. Me encanta aprender nuevas
+                tecnologías y mejorar mis habilidades constantemente.
+            </p>
+        </section>
+
+        <!-- Experiencia Laboral -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 mb-4">Experiencia Laboral</h2>
+            <div class="space-y-4">
+                <div>
+                    <h3 class="text-xl font-bold text-gray-800 dark:text-gray-100">Desarrollador Front-End</h3>
+                    <p class="text-gray-600 dark:text-gray-400">Tech Solutions - Enero 2022 - Actualidad</p>
+                    <ul class="list-disc pl-6 text-gray-600 dark:text-gray-400">
+                        <li>Desarrollar interfaces web modernas con React y Tailwind CSS.</li>
+                        <li>Colaborar con el equipo de diseño para crear experiencias de usuario intuitivas.</li>
+                        <li>Optimizar el rendimiento web y la accesibilidad.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-gray-800 dark:text-gray-100">Practicante de Desarrollo Web</h3>
+                    <p class="text-gray-600 dark:text-gray-400">WebWorks - Julio 2021 - Diciembre 2021</p>
+                    <ul class="list-disc pl-6 text-gray-600 dark:text-gray-400">
+                        <li>Desarrollo y mantenimiento de sitios web con HTML, CSS y JavaScript.</li>
+                        <li>Soporte en el diseño y creación de interfaces de usuario.</li>
+                        <li>Integración de API y optimización de sitios web.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Educación -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 mb-4">Educación</h2>
+            <div class="space-y-4">
+                <div>
+                    <h3 class="text-xl font-bold text-gray-800 dark:text-gray-100">Licenciatura en Ingeniería en Sistemas</h3>
+                    <p class="text-gray-600 dark:text-gray-400">Universidad Nacional - 2017 - 2021</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Habilidades -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 mb-4">Habilidades</h2>
+            <ul class="grid grid-cols-2 gap-6 text-gray-600 dark:text-gray-400">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Tailwind CSS</li>
+                <li>Node.js</li>
+                <li>Git</li>
+                <li>API REST</li>
+            </ul>
+        </section>
+
+        <!-- Idiomas -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 mb-4">Idiomas</h2>
+            <ul class="text-gray-600 dark:text-gray-400">
+                <li>Español: Nativo</li>
+                <li>Inglés: Intermedio (B2)</li>
+            </ul>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center text-gray-500 dark:text-gray-400 text-sm mt-10">
+            <p>© 2024 Juan Pérez</p>
+        </footer>
+    </div>
+
+    <!-- Script para alternar entre modo claro y oscuro -->
+    <script>
+        const themeToggleButton = document.getElementById('theme-toggle');
+        themeToggleButton.addEventListener('click', () => {
+            // Verificar el modo actual y alternar entre claro y oscuro
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark');
+                themeToggleButton.textContent = "Cambiar a Modo Oscuro";
+            } else {
+                document.documentElement.classList.add('dark');
+                themeToggleButton.textContent = "Cambiar a Modo Claro";
+            }
+        });
+    </script>
+</body>
+
+</html>
